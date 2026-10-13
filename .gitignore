@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor swap & temporary files
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Compiled binaries
+*.exe
+*.out
+*.test
+__debug_bin*
+
+# Go build artifacts
+/dist/
+/bin/
