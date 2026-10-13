@@ -87,6 +87,18 @@ def render_readme(solutions):
 
     lines.extend([
         "",
+        "## First Time Setup: Authentication",
+        "",
+        "LeetCode requires your session cookie to load problems and run submissions:",
+        "",
+        "1. Log in to https://leetcode.com in your browser.",
+        "2. Open Developer Tools (`F12`), go to the Application or Storage tab, and select Cookies -> `https://leetcode.com`.",
+        "3. Copy the values of `LEETCODE_SESSION` and `csrftoken` in this format:",
+        "   ```text",
+        "   LEETCODE_SESSION=your_session_value; csrftoken=your_csrf_token;",
+        "   ```",
+        "4. In Neovim, run `:Leet` and press `s` (or run `:Leet cookie update`), paste the cookie string, and press Enter.",
+        "",
         "## Command Reference",
         "",
         "You can launch the plugin directly with `nvim leetcode.nvim` or run `:Leet` inside any Neovim session.",
